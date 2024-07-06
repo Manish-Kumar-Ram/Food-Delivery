@@ -10,6 +10,10 @@ Currently, two official plugins are available:
 
 ![Food Delivery App Screenshot](./screenshot.png)
 
+# Food Delivery App
+
+![Food Delivery App Screenshot](./screenshot.png)
+
 This repository contains a food delivery web application built with React, Firebase, and integrated with AI using Gemini. The app includes features for user authentication, CRUD operations, product management, cart functionality, and external API integration.
 
 ## Features
@@ -47,9 +51,16 @@ This repository contains a food delivery web application built with React, Fireb
 - **API Integration:**
   - Gemini AI
 
-## Installation and Setup
+## Razorpay Payment Integration
 
-To run this project locally, follow these steps:
+To enable payments in your food delivery app, you can integrate Razorpay for secure transactions. Follow these steps to set up Razorpay integration:
+
+1. **Sign up for a Razorpay account:**
+   - Create an account at [Razorpay Dashboard](https://dashboard.razorpay.com).
+
+2. **Generate API keys:**
+   - Obtain your API Key and API Secret from the Razorpay Dashboard.
+
 
 1. **Clone the repository:**
 
