@@ -6,3 +6,64 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Food Delivery App
+
+![Food Delivery App Screenshot](./screenshot.png)
+
+# Food Delivery App
+
+![Food Delivery App Screenshot](./screenshot.png)
+
+This repository contains a food delivery web application built with React, Firebase, and integrated with AI using Gemini. The app includes features for user authentication, CRUD operations, product management, cart functionality, and external API integration.
+
+## Features
+
+- **User Authentication:**
+  - Firebase Authentication for secure user login and logout.
+  - Email/password authentication method integrated with Firebase services.
+
+- **Product Management:**
+  - CRUD operations for managing food products.
+  - Product listing and detailed views with dynamic content.
+
+- **Cart Functionality:**
+  - Ability to add items to the cart, adjust quantities, and remove items.
+  - Seamless cart management for a smooth shopping experience.
+
+- **External API Integration:**
+  - Integration with external APIs for additional product information or services.
+  - Utilization of third-party APIs to enhance app functionality.
+
+- **AI Integration (Gemini):**
+  - Gemini AI integration for enhanced user interactions or personalized recommendations.
+  - AI-powered features to provide intelligent responses or suggestions.
+
+## Technologies Used
+
+- **Frontend:**
+  - React.js
+  - HTML/CSS
+  - JavaScript (ES6+)
+
+- **Backend:**
+  - Firebase (Firestore, Authentication)
+
+- **API Integration:**
+  - Gemini AI
+
+## Razorpay Payment Integration
+
+To enable payments in your food delivery app, you can integrate Razorpay for secure transactions. Follow these steps to set up Razorpay integration:
+
+1. **Sign up for a Razorpay account:**
+   - Create an account at [Razorpay Dashboard](https://dashboard.razorpay.com).
+
+2. **Generate API keys:**
+   - Obtain your API Key and API Secret from the Razorpay Dashboard.
+
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/food-delivery-app.git
+   cd food-delivery-app
