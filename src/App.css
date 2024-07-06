@@ -1,0 +1,882 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navbar .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #ed272b;
+}
+
+.navbar .Homepage {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'popins', sans-serif;
+}
+
+.navbar .Homepage .home {
+    font-weight: 800;
+    text-decoration: underline;
+    color: #ed272b;
+}
+
+.navbar .login-sign {
+    width: 25%;
+    text-align: center;
+}
+
+.navbar button {
+    background-color: #fa4a0c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-right: 8px;
+}
+
+/* Homepage styles */
+.homepage {
+    padding: 80px 20px; /* Adjust padding to ensure content isn't hidden behind navbar */
+    background-color: tomato;
+    text-align: center;
+    min-height: calc(100vh - 68px); /* Ensure the content does not go behind the navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    margin-bottom: 40px;
+    font-family: 'popins', sans-serif;
+}
+
+.home-content h1 {
+    font-family: Courgette, cursive;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 400;
+    color: #e4d5d5;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    color: #ffff;
+    margin: 10px 0;
+}
+
+.view-menu {
+    padding: 10px 18px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+}
+
+.order-image {
+    font-family: 'popins',sans-serif;
+    width: 100%;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Ensure images do not overflow */
+    text-align: center; /* Center the heading */
+}
+
+.image-row {
+    display: flex; /* Arrange images in a row */
+    justify-content: center; /* Center align images horizontally */
+    gap: 20px; /* Gap between images */
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+.image-row img {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover container without stretching */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow with transparency */
+    margin-bottom: 2rem;
+}
+
+.image-row img:hover {
+    transform: scale(1.05); /* Scale up image on hover for a subtle zoom effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+video {
+    width: 100%;
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Margin between text and video on larger screens */
+    margin-bottom: 20px; /* Margin at the bottom of the video */
+}
+
+/* Menu.css */
+
+.explore-menu {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'popins',sans-serif;
+}
+
+.input {
+    width: 100%;
+    max-width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.exploremenu-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    /* Custom scrollbar for WebKit */
+    scrollbar-width: none; /* Disable scrollbar */
+    -ms-overflow-style: none; /* Disable scrollbar for IE and Edge */
+}
+
+.exploremenu-list .active {
+    border: 2px solid tomato;
+    padding: 2px;
+}
+
+.exploremenu-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit */
+}
+
+.exploremenu-list > div {
+    flex: 0 0 auto;
+    width: 200px; /* Adjust as per your design */
+    text-align: center;
+}
+
+.exploremenu-list > div img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exploremenu-list > div p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.scroll-container {
+    display: flex;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.scroll-container button {
+    border-radius: 100%;
+    height: 34px;
+    padding: 8px 8px 4px;
+    background: rgb(226, 226, 231);
+}
+
+/* Menu.css */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the search bar horizontally */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    margin-top: 1rem;
+}
+
+.search-icon {
+    margin-right: 10px; /* Adjust spacing between icon and input */
+}
+
+.input {
+    flex: 1; /* Takes up remaining space */
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+/* food-display */
+
+.food-display {
+    margin-top: 45px;
+    padding: 2rem;
+    font-family: 'popins', sans-serif;
+}
+
+.food-display h2 {
+    text-align: center;
+    font-size: max(2vw, 24px);
+    font-family: 'popins', sans-serif;
+}
+
+.food-diplay-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+/* fooditem */
+
+.fooditem {
+    width: 100%;
+    margin: auto;
+    border-radius: 14px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: 0.3s;
+    animation: fade 1s;
+}
+
+.food-item-images {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.food-item-info {
+    padding: 20px;
+}
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-item-name-rating p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.food-item-name-rating img {
+    width: 70px;
+}
+
+.food-item-description {
+    color: #767676;
+    font-size: 12px;
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.food-item-price {
+    color: tomato;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 10px;
+}
+
+.food-item-img {
+    position: relative;
+}
+
+.food-item-img .add {
+    position: absolute;
+    width: 35px;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.food-item-counter img {
+    width: 30px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #222; /* Dark gray background */
+    color: #fff; /* White text color */
+    padding: 50px 0; /* Padding for content */
+    font-family: Lexend, sans-serif;
+    font-optical-sizing: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content div {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-content div:last-child {
+    margin-right: 0;
+}
+
+.footer-content p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #f00; /* Red color on hover */
+}
+
+.footer-content input {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer-content button {
+    background-color: #f00; /* Red background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-content button:hover {
+    background-color: #d00; /* Darker red on hover */
+}
+
+.social-links {
+    text-align: center; /* Center align text and icons */
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+.social-links p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-links span {
+    margin: 0 10px; /* Space between icon spans */
+}
+
+.social-links input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.social-links button {
+    background-color: #f00; /* Red background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links button:hover {
+    background-color: #d00; /* Darker red on hover */
+}
+
+/* Media Queries */
+
+/* login */
+
+  
+  /* signup */
+  /* Example CSS */
+.outer-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+  
+  .login-container, .signup-container {
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'popins',sans-serif;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .submit-button, .google-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  #google{
+    background-color: transparent;
+border: 1px solid black;
+font-size: 35px; 
+}
+  
+  .submit-button:hover, .google-button:hover {
+    background-color: #45a049;
+  }
+  
+  .google-button {
+    background-color: #DB4437;
+  }
+  
+  .google-button:hover {
+    background-color: #c23321;
+  }
+  
+ 
+  
+ /* Payment.css */
+.payment-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .payment-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .payment-container button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-container button:hover {
+    background-color: #333;
+  }
+  
+  .payment-container button:active {
+    background-color: #555;
+  }
+  
+  .payment-container button:focus {
+    outline: none;
+  }
+  
+  .payment-container .info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+/* Review.css */
+
+.review-container {
+    max-width: 600px;
+ margin: auto;
+   margin-top: 80px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .review-form {
+    margin-bottom: 20px;
+  }
+  
+  .review-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .review-form select,
+  .review-form input[type="number"],
+  .review-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .review-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .review-list {
+    margin-top: 20px;
+  }
+  
+  .review-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-item h3 {
+    margin-bottom: 10px;
+  }
+  
+  .review-item p {
+    margin-bottom: 5px;
+  }
+  
+  .review-item hr {
+    margin-top: 10px;
+    border: none;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Recipes.css */
+
+/* Styles for the container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'popins',sans-serif;
+  }
+  
+  /* Heading style */
+  .container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Main section layout */
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Output container style */
+  .output {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Output text style */
+  .output-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Textarea style */
+  .textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .textarea textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+  
+  /* Button style */
+  #Button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #Button:hover {
+    background-color: #45a049;
+  }
+/* Output text container */
+.output-text {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px; /* Padding around the text */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width */
+  }
+  
+  /* Heading style */
+  .output-text h2 {
+    font-size: 1.1rem; /* Large font size */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 10px; /* Bottom margin */
+    text-align: center; /* Center align text */
+  }
+  
+  /* Subheading style */
+  .output-text h3 {
+    font-size: 1.4rem; /* Medium font size */
+    color: #4CAF50; /* Green text color */
+    margin-bottom: 10px; /* Bottom margin */
+  }
+  
+  /* Paragraph style */
+  .output-text p {
+    font-size: 1.2rem; /* Normal font size */
+    line-height: 1.6; /* Line height for readability */
+    color: #666; /* Dark gray text color */
+    margin-bottom: 15px; /* Bottom margin */
+  }
+  
+  /* Emphasized text style */
+  .output-text strong {
+    color: #f00; /* Red text color */
+  }
+  
+  /* Link style */
+  .output-text a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  .output-text a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+    
+  
+  
+  
+  @media (max-width: 768px) {
+    .recipe-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+@media only screen and (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+    .navbar {
+        height: 60px; /* Adjust height for smaller screens */
+        padding: 10px;
+        margin: 10px; /* Adjust padding for smaller screens */
+     position: static;
+     top: 0;
+     left: 0;
+    }
+
+    .navbar .logo {
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+
+    .navbar .Homepage {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar .Homepage .home {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .navbar .login-sign {
+        display: none; /* Hide login/sign-up on smaller screens */
+    }
+
+    .order-image {
+        max-width: 100%;
+       
+        /* Ensure images are responsive */
+    }
+
+    .image-row img {
+        width: 150px; /* Adjust image width for smaller screens */
+    }
+
+    .exploremenu-list > div {
+        width: 150px; /* Adjust item width for smaller screens */
+    }
+    .homepage{
+flex-direction: column;
+}
+.home-content h1{
+        font-size: 2.9rem;
+
+    }
+    .video-container video{
+width: 100%;
+max-width: 400px;
+    }
+
+    .search-bar {
+        max-width: 400px;
+        padding: 0.2rem;
+        /* Adjust max-width for smaller screens */
+    }
+
+    .fooditem {
+        width: 100%; /* Ensure food items take full width on smaller screens */
+    }
+
+    
+    .footer{
+        text-align: center;
+       
+    }
+    .footer .footer-content{
+        flex-direction: column;
+       line-height: 1.2rem;
+       
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for mobile phones */
+    .navbar {
+        height: 50px; /* Adjust height for smaller screens */
+    }
+
+    .navbar .logo {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .home-content h1 {
+        font-size: 42px; /* Adjust font size for smaller screens */
+    }
+
+    .home-content p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .image-row img {
+        width: 120px; /* Adjust image width for smaller screens */
+    }
+
+    .exploremenu-list > div {
+        width: 120px; /* Adjust item width for smaller screens */
+    }
+
+    .fooditem {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
